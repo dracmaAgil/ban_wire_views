@@ -1,0 +1,18 @@
+.container
+  %center
+    %br
+    %h2
+      Recarga exitosa
+    %br
+    %br
+    = "Id: #{@payout_data['id']}"
+    %br
+    = "Código de autorización: #{@payout_data['auth_code']}"
+    %br
+    = "Referencia: #{@payout_data['reference']}"
+    %br
+    = "Monto total: #{@payout_data['total']}"
+    %br
+    %br
+    =link_to root_path do 
+      Inicio

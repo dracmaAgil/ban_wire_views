@@ -3,10 +3,10 @@
     %br
     %h2
       Recarga tu cuenta nimanic
-    =form_tag 'pay', { id: 'pay', remote: true} do
+    =form_tag request.base_url, { id: 'pay', remote: true} do
       %br/
       =label_tag '', 'Monto'
       =select_tag 'amount', '<option>15</option><option>50</option><option>100</option>'.html_safe
       %br
       %br
-      =submit_tag 'Recargar'
+      =button_tag 'Recargar', {id: 'recharge', type: 'button'}
